@@ -3,14 +3,14 @@ import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../util/fontawesome/css/all.css';
 import Contacts from './Contacts';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 import AddContact from './AddContact';
 import About from './About';
 
 class App extends React.Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <Header
             brand="Contacts"
@@ -25,7 +25,7 @@ class App extends React.Component {
           <Route exact path="/addcontact" component={AddContact} />
           <Route exact path="/about/:app" component={About} />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
