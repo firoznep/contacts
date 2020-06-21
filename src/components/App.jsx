@@ -21,7 +21,7 @@ class App extends React.Component {
           />
         </div>
         <div className="container">
-          <Route exact path="/" component={Contacts} />
+          <Route exact path="/contacts" component={Contacts} />
           <Route exact path="/addcontact" component={AddContact} />
           <Route exact path="/about/:app" component={About} />
         </div>
